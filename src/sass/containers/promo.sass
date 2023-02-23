@@ -1,0 +1,97 @@
+.promo
+    padding: 24px 0 24px
+    &__image
+        position: relative
+
+    &__corner
+        position: absolute
+        bottom: 0
+        right: 0
+
+    &__details
+        position: absolute
+        bottom: 33px
+        left: 32px
+
+        width: 250px
+        height: 250px
+        padding: 45px 40px
+
+        font-family: 'Trebuchet MS', sans-serif
+
+        background-color: $bg-accent
+        border-radius: 50%
+
+    &__type
+        margin-bottom: 16px
+
+        font-style: normal
+        font-weight: 700
+        font-size: 25px
+        line-height: 1.16
+        text-align: center
+
+    &__code
+        display: flex
+        flex-direction: column
+        align-items: center
+        row-gap: 7px
+
+        font-weight: 700
+        font-size: 14px
+        line-height: 1.14
+
+        text-align: center
+        text-transform: uppercase
+
+        span
+            display: inline-block
+            padding: 2px 4px
+
+            color: $white
+            font-size: 24px
+            line-height: 1.17
+
+            background-color: $text-primary
+
+    &__content
+        position: relative
+
+        display: flex
+        align-items: center
+        margin-bottom: 31px
+        padding-top: 23px
+
+        font-family: Trebuchet MS, sans-serif
+        font-style: normal
+        font-weight: 700
+        font-size: 35px
+
+    &__title
+        margin-right: 20px
+
+        transition: color 200ms linear, border-bottom-color 200ms linear
+        &:hover
+            color: $hover
+            border-bottom-color: $hover
+
+    &__advantages
+        position: absolute
+        top: -38px
+        right: 114px
+
+        width: 144px
+
+        font-family: 'Arial', sans-serif
+        font-style: normal
+        font-weight: 400
+        font-size: 30px
+        line-height: 1.03
+
+        span
+            display: inline-block
+
+            color: $text-secondary
+            font-size: 88px
+            line-height: 102px
+            letter-spacing: -0.05em
