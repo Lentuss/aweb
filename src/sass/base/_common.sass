@@ -3,6 +3,64 @@
 body
     font-family: Arial, sans-serif
 
+blockquote
+    position: relative
+
+    margin: 0 0 24px 48px
+    padding-left: 24px
+
+    &::before
+        content: ' '
+        position: absolute
+        left: 0
+        width: 8px
+        height: 100%
+        background-color: $color-primary
+
+ul
+    margin-left: 24px
+    li
+        margin-bottom: 8px
+
+        font-size: 14px
+        line-height: 1.36
+
 .container
     max-width: 1040px
     margin: 0 auto
+    @media (max-width: 1040px)
+
+        padding: 0 16px
+
+table
+    border-collapse: collapse
+    margin-bottom: 24px
+
+    thead
+        border-collapse: collapse
+
+        background-color: $border
+        border: 8px solid $border
+
+    tr
+        border-top: 1px solid $border
+        font-family: 'DM Sans', sans-serif
+        font-size: 14px
+        line-height: 1.43
+        letter-spacing: 0.1px
+
+        th
+            width: 25%
+            height: 66px
+            font-weight: 700
+            text-align: left
+
+            @media (min-width: 1024px)
+                vertical-align: middle
+
+        td
+            height: 64px
+            vertical-align: middle
+
+            &:first-child
+                text-indent: 8px

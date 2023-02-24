@@ -1,11 +1,15 @@
-.header
-    .socials
-        display: flex
-        column-gap: 16px
+.socials
+    display: flex
+    justify-content: flex-end
+    column-gap: 16px
 
-        svg
-            fill: $white
-            transition: fill 400ms linear
+    @media (max-width: 767px)
+        column-gap: 4px
+        margin-top: 8px
+
+    svg
+        fill: $white
+        transition: fill 400ms linear
 
         svg:hover
             fill: $border

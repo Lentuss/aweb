@@ -1,9 +1,17 @@
 .rating
     display: flex
     align-items: center
+    flex-wrap: wrap
 
     line-height: 1.17
     font-style: normal
+
+    @media (max-width: 767px)
+        display: block
+
+    &__wrapper
+        display: flex
+        align-items: center
 
     &__count
         margin-right: 24px
@@ -20,6 +28,7 @@
     &__total
         padding: 12px 7px
         margin-right: 24px
+        margin-bottom: 8px
 
         color: $white
         font-family: 'Trebuchet MS'
@@ -29,6 +38,10 @@
 
         background-color: $color-primary
 
+    &__results
+        display: flex
+        align-items: center
+
     &__type
         font-size: 12px
         letter-spacing: 0.05em
@@ -36,6 +49,9 @@
 
         &:not(:last-child)
             margin-right: 16px
+
+        @media (max-width: 1023px)
+            font-size: 10px
 
     &__score
         font-size: 18px

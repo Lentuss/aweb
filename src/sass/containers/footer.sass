@@ -1,0 +1,21 @@
+.footer
+    display: flex
+    justify-content: space-between
+    padding-top: 24px
+
+    border-top: 1px solid $border
+    &__link
+        color: $text-link
+
+    .socials
+        display: flex
+        column-gap: 16px
+
+        @media (max-width: 1023px)
+            column-gap: 4px
+
+        img
+            transition: transform 400ms linear
+
+        img:hover
+            transform: scale(1.05)
